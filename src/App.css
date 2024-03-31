@@ -1,0 +1,180 @@
+* {
+  font-family: 'Kanit', sans-serif;
+}
+
+html {
+  height: 100%
+}
+
+.header {
+  background-color: #aeaeae;
+  z-index: 1;
+  height: 4rem;
+  position: sticky;
+  box-shadow: 0 -6px 10px 7px rgba(0,0,0,0.5);
+  display: grid;
+  grid-template-columns: .5fr 1fr;
+}
+
+.gridBox {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.gridBox > * {
+  padding: 3rem
+}
+
+@media (min-width: 786px) {
+  .gridBox{
+    display: grid;
+    grid-template-columns:  1fr 1.5fr;
+  }
+  
+}
+
+body {
+  background-color: white;
+  height: inherit;
+  font-weight:400;
+}
+
+.headerContrast {
+  display: inline-block;
+  
+}
+
+/* .namePlate {
+  
+} */
+
+#signature {
+  max-height: 6rem
+}
+
+.buttonDiv {
+  background: #0c122b;
+  margin-right: .5rem;
+  height: inherit;
+  box-shadow: 0 -6px 10px 1px rgba(0,0,0,0.5);
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 1rem;
+  height: inherit;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+button:hover {
+  animation: buttonHov .2s forwards;
+}
+
+
+
+.dark {
+  color: white;
+  text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+}
+
+.rightSide {
+  font-size: 2rem;
+  text-align: left;
+  box-shadow: 0 -6px 10px 1rem rgba(255,255,255,0.5);
+  background-color: #F7F7F7;
+}
+
+.pageContent {
+  animation: fadeIn 1.2s forwards;
+}
+
+.leftSide {
+  align-items: center;
+}
+
+.float-left {
+  float: left;
+}
+
+.title {
+  color: #520075;
+ text-align: left; 
+ font-weight: bold;
+ font-size: 3rem;
+}
+
+@keyframes buttonHov {
+  to {
+    background-color: #433446;
+    color: #80D7F0;
+    box-shadow: .1rem 0rem 1.5rem 0rem #161217 inset;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.pictureday {
+  max-width: 30rem;
+  transform: translate(0,20%);
+  animation: fadeIn 1.2s forwards
+}
+
+.activated {
+  color: #1489aa;
+}
+
+.contacticon {
+  max-width: 4rem;
+  border-radius: 1rem;
+  filter: invert(43%) sepia(3%) saturate(2609%) hue-rotate(14deg) brightness(93%) contrast(89%);
+}
+
+.link {
+  display: inline-block;
+  transform: translate(10%,-43%);
+  margin: 0;
+}
+
+.gold {
+  color: #6D6952;
+}
+
+.link-div{
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+@keyframes icon-hover {
+  to{
+    box-shadow: 0 4px 10px 5px rgba(0,0,0,0.5);
+  }
+}
+
+@keyframes text-hover {
+  to{
+    text-shadow: 2px 6px 9px rgba(0,0,0,0.4);
+  }
+}
+
+.link-div:hover > .icon {
+  animation: icon-hover .2s forwards
+}
+
+.link-div:hover > .text {
+  animation: text-hover .2s forwards
+}

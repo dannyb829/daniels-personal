@@ -1,0 +1,3 @@
+
+export const blurb = "Meet Daniel, a talented artist from the Caribbean. He draws inspiration from the vibrant colors and rich cultural heritage of his homeland. He uses his art to raise awareness about the impact of climate change on his beloved island and is an advocate for environmental conservation. His warm personality and infectious smile make him a beloved member of his community, and his artwork has gained recognition both locally and internationally."
+export const contactInfo = { email: "email: dannyb829@gmail.com", linkedin: "www.linked.com", medium: "blog: www.medium.com" }
