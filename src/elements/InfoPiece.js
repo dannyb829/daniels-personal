@@ -27,6 +27,11 @@ export default function InfoBox ({page}) {
                                 <img src='/images/email.png' title='email icon' className="contacticon icon"></img>
                                 <p className="link gold text">Email</p>
                             </a>
+                            <br></br>
+                            <a href='http://localhost:4000/download' className="link-div">
+                                <img src='/images/email.png' title='email icon' className="contacticon icon"></img>
+                                <p className="link gold text">Resume</p>
+                            </a>
                         </main>
             case 'projects':
                 return <div className="pageContent"><p className='title'> SOME OF MY WORK..</p></div>
