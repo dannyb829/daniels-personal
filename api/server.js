@@ -5,7 +5,7 @@ const app = express()
 const path = require('path');
 
 const filePath = path.resolve(__dirname, 'download.html');
-const resume = path.resolve(__dirname, 'DanielBritoResume.pdf');
+const resume = path.resolve(__dirname, 'DanielBritoResumeProtected.pdf');
 
 app.get("/", function(req, res) {
   res.sendFile(filePath)

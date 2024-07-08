@@ -6,9 +6,9 @@ export default function ImageSection({page}){
         case 'background':
             return <img src='/images/picofme.jpeg' title='Picture of Daniel' className='pictureday'></img>
         case 'contact':
-            return <img src='/images/contact.png' title='contact book icon' className='pictureday'></img>
+            return <img src='/images/contact.png'  title='contact book icon' className='pictureday'></img>
         case 'projects':
-            return <img src='/images/projects.png' title='contact book icon' className='pictureday'></img>
+            return <img src='/images/projects.png' title='working icon'      className='pictureday'></img>
 
     }
 }

@@ -1,12 +1,13 @@
 import { useEffect } from "react"
+import NavMenu from "./NavMenu"
 
 
 
-export default function Header({setPage, page}) {
+export default function Header({setPage, page, open, setOpen}) {
 
     useEffect(()=>{
-        console.log(page)
-    },[page])
+        console.log(open)
+    },[page,open])
 
 
     function Clicked({target: {name}}){
@@ -14,17 +15,16 @@ export default function Header({setPage, page}) {
     }
 
     return (
-        <header className='header dark'>
+        <header className='dark'>
             <div className='headerContrast'>
-                {/* <div className='namePlate'>
-                    <img src='/images/signature.png' id='signature'></img>
-                </div> */}
+                    {/* <p className='namePlate'>DANIEL BRITO</p> */}
             </div>
-            <div className='buttonDiv rounded'>
+            <div className='buttonDiv'>
 
-            <button className={'dark rounded' + (page === 'contact' ? ' activated' : '')} name='contact' onClick={Clicked}>CONTACT</button>
-            <button className={'dark'  + (page === 'projects' ? ' activated' : '')} name='projects' onClick={Clicked}>PROJECTS</button>
-            <button className={'dark'  + (page === 'background' ? ' activated' : '')} name='background' onClick={Clicked}>BACKGROUND</button>
+            <button className={'navButton dark' + (page === 'contact' ? ' activated' : '')} name='contact' onClick={Clicked}>CONTACT</button>
+            <button className={'navButton dark'  + (page === 'projects' ? ' activated' : '')} name='projects' onClick={Clicked}>PROJECTS</button>
+            <button className={'navButton dark'  + (page === 'background' ? ' activated' : '')} name='background' onClick={Clicked}>BACKGROUND</button>
+            <button className={"nav-menu"} onClick={() => setOpen(!open)}><img src="/images/menu-icon.png"/></button>
             </div>
         </header>
     )
