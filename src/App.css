@@ -60,14 +60,6 @@ header {
     max-width: 75%;
   }
 
-  #leftSide {
-    grid-area: bl;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    padding:15px;
-  }
-
 }
 
 
@@ -102,7 +94,6 @@ button {
   background: transparent;
   border: 0;
   padding: 1rem;
-  /* height: inherit; */
   font-size: 1.5rem;
   font-weight: bolder;
 }
@@ -136,6 +127,7 @@ button:hover {
 .link-box{
   display: flex;
   flex-direction: column;
+  animation: fadeIn 1.2s forwards;
 }
 
 .title {
@@ -161,13 +153,6 @@ button:hover {
   100% {
       opacity: 1;
   }
-}
-
-.pictureday {
-  max-width: 300px;
-  margin: 30px;
-  animation: fadeIn 1.2s forwards;
-
 }
 
 .activated {
@@ -246,4 +231,14 @@ ul {
   box-shadow: 0 -6px 10px 1rem rgba(255,255,255,0.5);
   background-color: #F7F7F7;
   padding: 30px;
+}
+
+#leftSide{
+  grid-area: bl;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 15%;
+  background-image: url("../public/images/picofme.jpeg");
+  background-position: center;
 }

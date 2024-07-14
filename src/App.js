@@ -2,7 +2,7 @@ import './App.css';
 import Header from './elements/Header';
 import InfoBox from './elements/InfoPiece';
 import { useState } from 'react';
-import ImageSection from './elements/ImageSection';
+import LeftSide from './elements/LeftSide';
 import NavMenu from './elements/NavMenu';
 
 function App() {
@@ -15,9 +15,7 @@ function App() {
       <Header setPage={setPage} page={page} open={open} setOpen={setOpen} />
       <NavMenu open={open} page={page} setPage={setPage}/>
     </div>
-      <div id='leftSide'>
-        <ImageSection page={page}/>
-      </div>
+      <LeftSide/>
       <div id='rightSide'>
         <InfoBox page={page}/>
       </div>
